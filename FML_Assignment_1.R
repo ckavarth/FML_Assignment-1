@@ -28,6 +28,8 @@ sqrt_weight <- sqrt(dataset$weight)
 sqrt_weight
 
 #Print the first few rows of the dataset to see the transformed variable
+##head() function is used to print the first few rows of the dataset to see the transformation.
+
 head(dataset)
 
 # Filter data for individuals who smoke
@@ -35,13 +37,17 @@ smoking_data <- dataset[dataset$smoking == "smoking", ]
 
 ##5)Plot at least one quantitative variable, and one scatterplot
 # Plot scatterplot of Height(cm) vs. weight
+# A scatterplot is a graphical representation of the relationship between two quantitative variables. 
+# Each point on the plot represents a single observation,with one variable plotted on the x-axis and another variable plotted on the y-axis. 
 plot(dataset$height.cm., dataset$weight,
      xlab = "Height(cm)",
      ylab = "Weight",
      main = "Scatterplot of Height vs. Weight")
 
-# Plot one quantitative variable
-hist(dataset$weight)
+# Plot one quantitative variable (Histogram)  
+# A histogram is a graphical representation of the distribution of a single quantitative variable.
+
+hist(dataset$height.cm.)
 
 
 
